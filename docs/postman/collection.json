@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "5a075de6-a479-45ed-9d28-10a307e2a20c",
+		"name": "Messenger",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Messages",
+			"id": "b666eb2e-a52c-426c-89e9-3f9041cda1d7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/messages"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Message by ID",
+			"id": "7cd0e1d6-8f4a-4ae9-b684-b654840c6cc7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/messages/:id",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"messages",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "m_9te5ArMf2RKwnfC-FEt9bKg7gy6abH6SD6wh_ZoZvRRRE58gN47IBqp02_9qejvyArcY9z5BqV4nKOvNw49RbA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Summary",
+			"id": "49aa054e-270b-4420-b6e0-e74d41e5b417",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/summary"
+			},
+			"response": []
+		}
+	]
+}
